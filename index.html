@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lyrics Hub India – Tamil Song Lyrics</title>
+  <meta name="description" content="Lyrics Hub India – Get Tamil movie song lyrics with synced lines, original & romanized text, and streaming links." />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Header -->
+  <header class="text-center py-10 bg-gray-800 shadow-lg">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2 text-yellow-400">🎵 Lyrics Hub India</h1>
+    <p class="text-lg md:text-xl text-gray-300">Tamil Movie Song Lyrics • Synced • Translated • Beautiful</p>
+  </header>
+
+  <!-- Search Bar -->
+  <section class="max-w-xl mx-auto mt-10 px-4">
+    <input
+      type="text"
+      placeholder="Search lyrics..."
+      class="w-full px-4 py-3 rounded-xl text-black focus:outline-none shadow-md"
+      id="searchInput"
+    />
+  </section>
+
+  <!-- Latest Songs Grid -->
+  <section class="mt-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-4 border-b border-yellow-400 inline-block">Latest Tamil Songs</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+        <!-- Song Card -->
+        <a href="songs/kadhavai-thirandhaye.html" class="bg-gray-800 rounded-xl shadow-lg p-4 hover:bg-yellow-400 hover:text-black transition duration-300">
+          <img src="https://link-to-album-art.jpg" alt="Kadhavai Thirandhaye" class="rounded-md mb-3">
+          <h3 class="text-xl font-bold">Kadhavai Thirandhaye</h3>
+          <p class="text-sm text-gray-400">Leo • Anirudh • 2023</p>
+        </a>
+
+        <!-- Repeat cards for other songs -->
+        <a href="songs/jinguchaa.html" class="bg-gray-800 rounded-xl shadow-lg p-4 hover:bg-yellow-400 hover:text-black transition duration-300">
+          <img src="https://link-to-jinguchaa.jpg" alt="Jinguchaa" class="rounded-md mb-3">
+          <h3 class="text-xl font-bold">Jinguchaa</h3>
+          <p class="text-sm text-gray-400">Joe • GV Prakash • 2024</p>
+        </a>
+
+        <!-- Add more cards as you add more lyrics pages -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 text-center py-6 bg-gray-800 text-gray-400 text-sm">
+    &copy; 2025 Lyrics Hub India. All rights reserved.
+  </footer>
+
+  <!-- Optional: Basic Search Script -->
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+      const cards = document.querySelectorAll('a');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+  </script>
+
+</body>
+</html>
